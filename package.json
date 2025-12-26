@@ -24,11 +24,12 @@
     "lint": "eslint",
     "test": "bun run tests/db.test.ts",
     "postinstall": "npx prisma generate && npx prisma migrate deploy",
-    "prisma":"npx prisma migrate dev && npx prisma generate"
+    "prisma": "npx prisma migrate dev && npx prisma generate"
   },
   "dependencies": {
     "@prisma/adapter-pg": "^7.2.0",
     "@prisma/client": "^7.2.0",
+    "better-auth": "^1.4.9",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "dotenv": "^17.2.3",
